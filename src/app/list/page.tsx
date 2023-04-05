@@ -1,7 +1,11 @@
+'use client';
+
 import Link from 'next/link';
 
 import { Header } from '@/components/Header';
+import { Loader } from '@/components/Loader';
 import * as S from '@/styles/pages/list.styles';
+import { useQuery } from '@tanstack/react-query';
 
 type Training = {
   title: string;
@@ -16,22 +20,30 @@ type TrainingDay = {
   trainings: Training[];
 }
 
-async function getList(): Promise<TrainingDay[]> {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/trainings/list`);
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
+// async function getList(): Promise<TrainingDay[]> {
+//   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/trainings/list`);
+//   // The return value is *not* serialized
+//   // You can return Date, Map, Set, etc.
 
-  // Recommendation: handle errors
-  if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error('Failed to fetch data');
-  }
+//   // Recommendation: handle errors
+//   if (!res.ok) {
+//     // This will activate the closest `error.js` Error Boundary
+//     throw new Error('Failed to fetch data');
+//   }
 
-  return res.json();
-}
+//   return res.json();
+// }
 
-export default async function ListPage() {
-  const list = await getList();
+export default function ListPage() {
+  // const list = await getList();
+
+  const { isLoading, data } = useQuery<TrainingDay[]>({
+    queryKey: ['training-weekdays'],
+    queryFn: () =>
+      fetch('/api/trainings/list').then(
+        (res) => res.json()
+      )
+  });
 
   return (
     <>
@@ -39,11 +51,14 @@ export default async function ListPage() {
 
       <S.Main>
         <S.List>
-          {list.map((item) => (
-            <li key={item.weekDay}>
-              <Link href={`/training/${item.weekDay}`}>{item.weekDayName}</Link>
-            </li>
-          ))}
+          {isLoading
+            ? (<Loader />)
+            : data?.map((item) => (
+              <li key={item.weekDay}>
+                <Link href={`/training/${item.weekDay}`}>{item.weekDayName}</Link>
+              </li>
+            ))
+          }
         </S.List>
       </S.Main>
     </>
