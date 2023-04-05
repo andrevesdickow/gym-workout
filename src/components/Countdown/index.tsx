@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 import { IconButton } from '@/components/IconButton';
-import { Play } from '@phosphor-icons/react';
+import { Play as PlayIcon, ArrowCounterClockwise as ArrowCounterClockwiseIcon } from '@phosphor-icons/react';
 
 import * as S from './styles';
 
@@ -27,11 +27,19 @@ export const Countdown = () => {
     }, 1000);
   };
 
+  const handleReset = () => {
+    setPlaying(false);
+    setCounter(60);
+  };
+
   return (
     <S.Container>
       <S.Timer>
         <span>{counter}</span>
-        <IconButton icon={<Play />} onClick={handlePlay} disabled={playing} />
+        <div>
+          <IconButton icon={<PlayIcon />} onClick={handlePlay} disabled={playing} />
+          <IconButton icon={<ArrowCounterClockwiseIcon />} onClick={handleReset} disabled={counter !== 0} />
+        </div>
       </S.Timer>
     </S.Container>
   );

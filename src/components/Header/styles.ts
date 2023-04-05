@@ -7,7 +7,7 @@ export const Header = styled('header', {
   display: 'flex',
   gap: '$sSpaceXs',
   background: '$header',
-  color: '$black',
+  color: '$white',
 
   '& a': {
     color: '$white',
@@ -20,20 +20,16 @@ export const Header = styled('header', {
     '&:hover': {
       backgroundColor: 'rgba(255, 255, 255, 0.3)'
     },
-  
+
     '&:focus': {
       border: '1px solid rgba(255, 255, 255, 0.4)'
     },
-  
+
     '&:disabled': {
       pointerEvents: 'none',
       backgroundColor: 'transparent',
       opacity: 0.7
     }
-  },
-
-  '@dark': {
-    color: '$white'
   }
 });
 

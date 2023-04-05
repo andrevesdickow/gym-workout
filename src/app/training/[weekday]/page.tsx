@@ -4,7 +4,7 @@ import SwipeableViews from 'react-swipeable-views';
 import { bindKeyboard } from 'react-swipeable-views-utils';
 
 
-// import { Countdown } from '@/components/Countdown';
+import { Countdown } from '@/components/Countdown';
 import { Header } from '@/components/Header';
 import { Loader } from '@/components/Loader';
 import { Training } from '@/components/Training';
@@ -47,15 +47,38 @@ export default function TrainingPage({ params }: {
   });
 
   const renderTraining = () => {
-    const views = data?.trainings.map((item, index) => (
-      <Training
-        key={item.title}
-        title={item.title}
-        imgSrc={item.src}
-        imgPriority={index === 0}
-        reps={item.reps}
-      />
-    ));
+    const views = [] as JSX.Element[];
+    const dataLength = data?.trainings.length || 0;
+
+    for (let index = 0; index < dataLength; index++) {
+      const item = data?.trainings[index];
+
+      if (item) {
+        views.push(
+          <Training
+            key={item.title}
+            title={item.title}
+            imgSrc={item.src}
+            imgPriority={index === 0}
+            reps={item.reps}
+          />
+        );
+
+        if (index < (dataLength - 1)) {
+          views.push(<Countdown />);
+        }
+      }
+    }
+
+    // const views = data?.trainings.map((item, index) => (
+    //   <Training
+    //     key={item.title}
+    //     title={item.title}
+    //     imgSrc={item.src}
+    //     imgPriority={index === 0}
+    //     reps={item.reps}
+    //   />
+    // ));
 
     return (
       <BindKeyboardSwipeableViews
