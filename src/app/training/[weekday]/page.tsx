@@ -41,7 +41,7 @@ export default function TrainingPage({ params }: {
   const { isLoading, data } = useQuery<TrainingDay>({
     queryKey: ['trainings'],
     queryFn: () =>
-      fetch(`http://localhost:3000/api/trainings/item?weekday=${weekday}`).then(
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/trainings/item?weekday=${weekday}`).then(
         (res) => res.json()
       )
   });

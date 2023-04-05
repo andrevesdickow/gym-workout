@@ -17,7 +17,7 @@ type TrainingDay = {
 }
 
 async function getList(): Promise<TrainingDay[]> {
-  const res = await fetch('http://localhost:3000/api/trainings/list');
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/trainings/list`);
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
 
