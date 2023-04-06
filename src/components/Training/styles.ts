@@ -33,7 +33,8 @@ export const Container = styled('div', {
   '@downSm': {
     '& img': {
       width: '100%',
-      height: 'auto'
+      height: 'auto',
+      maxWidth: 250
     }
   }
 });

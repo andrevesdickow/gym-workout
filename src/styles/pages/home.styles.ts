@@ -15,15 +15,17 @@ export const Main = styled('main', {
     color: '$foreground-rgb',
     textDecoration: 'none',
     padding: '$sSpaceSm',
-    border: '1px solid $colors$foreground-rgb',
+    boxShadow: '0 0 0 1px $colors$foreground-rgb',
     borderRadius: 8,
+    transition: 'all 0.1s ease-in-out',
 
     '&:hover': {
-      borderWidth: 2
+      boxShadow: '0 0 0 2px $colors$foreground-rgb',
+      backgroundColor: 'rgba(255, 255, 255, 0.1)'
     },
 
     '&:focus': {
-      borderWidth: 2
+      boxShadow: '0 0 0 2px $colors$foreground-rgb'
     },
 
     '& svg': {

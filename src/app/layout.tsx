@@ -7,7 +7,9 @@ import Providers from './providers';
 
 export const metadata = {
   title: 'Gym Workout',
-  description: 'My gym workout training'
+  description: 'Treino do meu cotidiano',
+  authors: { name: 'Andrêves Dickow', url: 'https://github.com/andrevesdickow' },
+  keywords: ['gym', 'training', 'workout']
 };
 
 const inter = Inter({ subsets: ['latin'] });

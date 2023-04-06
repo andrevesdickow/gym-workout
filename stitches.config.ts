@@ -147,9 +147,12 @@ export const globalStyles = globalCss({
         $colors$background-end-rgb
       )
       $colors$background-start-rgb`,
-    height: '100vh'
+    height: '100vh',
+    minHeight: '-webkit-fill-available'
   },
-  // https://dev.to/gthinh/adding-a-dark-theme-to-nextjs-with-stitches-2jdg
+  'html': {
+    height: '-webkit-fill-available'
+  },
   '@media (prefers-color-scheme: dark)': {
     ':root': {
       ...Object.values(darkTheme.colors).reduce((result: Record<string, string>, i) => {
