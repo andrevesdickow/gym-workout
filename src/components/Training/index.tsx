@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import { Countdown } from '@/components/Countdown';
+
 import * as S from './styles';
 
 type TrainingProps = {
@@ -7,13 +9,15 @@ type TrainingProps = {
   imgSrc: string;
   imgPriority?: boolean;
   reps?: string;
+  hasCountdown?: boolean;
 };
 
 export const Training = ({
   title,
   imgSrc,
   imgPriority,
-  reps
+  reps,
+  hasCountdown = true
 }: TrainingProps) => {
   return (
     <S.Container>
@@ -25,6 +29,7 @@ export const Training = ({
         height={360}
         priority={imgPriority}
       />
+      {hasCountdown === true && <Countdown />}
     </S.Container>
   );
 };

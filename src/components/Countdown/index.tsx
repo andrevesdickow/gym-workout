@@ -8,7 +8,7 @@ import { Play as PlayIcon, ArrowCounterClockwise as ArrowCounterClockwiseIcon } 
 import * as S from './styles';
 
 export const Countdown = () => {
-  const [counter, setCounter] = useState(60);
+  const [counter, setCounter] = useState(50);
   const [playing, setPlaying] = useState(false);
 
   const handlePlay = () => {
@@ -20,7 +20,7 @@ export const Countdown = () => {
           return prevCounter - 1;
         }
 
-        navigator.vibrate(200);
+        // navigator.vibrate(200);
         clearInterval(interval);
         return prevCounter;
       });
@@ -29,7 +29,7 @@ export const Countdown = () => {
 
   const handleReset = () => {
     setPlaying(false);
-    setCounter(60);
+    setCounter(50);
   };
 
   return (

@@ -146,7 +146,8 @@ export const globalStyles = globalCss({
         transparent,
         $colors$background-end-rgb
       )
-      $colors$background-start-rgb`
+      $colors$background-start-rgb`,
+    height: '100vh'
   },
   // https://dev.to/gthinh/adding-a-dark-theme-to-nextjs-with-stitches-2jdg
   '@media (prefers-color-scheme: dark)': {

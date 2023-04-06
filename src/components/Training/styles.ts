@@ -6,7 +6,8 @@ export const Container = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  justifyContent: 'center',
+  justifyContent: 'space-evenly',
+  padding: '$sSpaceXs',
   color: '$black',
 
   '& h3': {
@@ -23,9 +24,16 @@ export const Container = styled('div', {
 
   '@dark': {
     color: '$white',
-    
+
     '& img': {
       filter: 'invert(1)'
+    }
+  },
+
+  '@downSm': {
+    '& img': {
+      width: '100%',
+      height: 'auto'
     }
   }
 });

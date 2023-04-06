@@ -3,6 +3,7 @@ type Training = {
   description?: string;
   src: string;
   reps?: string;
+  hasCountdown?: boolean;
 }
 
 type TrainingDay = {
@@ -12,11 +13,11 @@ type TrainingDay = {
 }
 
 export default [
-  {
-    weekDay: 0,
-    weekDayName: 'Domingo',
-    trainings: []
-  },
+  // {
+  //   weekDay: 0,
+  //   weekDayName: 'Domingo',
+  //   trainings: []
+  // },
   {
     weekDay: 1,
     weekDayName: 'Segunda-feira',
@@ -69,22 +70,22 @@ export default [
       },
       {
         title: 'Rosca direta na polia',
-        src: '/img/back/',
+        src: '/img/arm/rosca-direta-no-cabo.webp',
         reps: '4x10'
       },
       {
         title: 'Rosca martelo sentado',
-        src: '/img/back/',
+        src: '/img/arm/rosca-martelo-com-halteres-no-banco-inclinado.webp',
         reps: '3x10'
       },
       {
         title: 'Flexão de punho',
-        src: '/img/back/',
+        src: '/img/arm/flexao-de-punho-com-halteres.jpg',
         reps: '3x8'
       },
       {
         title: 'Abdominal declinado',
-        src: '/img/back/',
+        src: '/img/others/abdominal-obliquo-no-banco-inclinado.webp',
         reps: '3x15'
       }
     ]
@@ -176,14 +177,16 @@ export default [
     weekDayName: 'Sexta-feira',
     trainings: [
       {
-        title: 'Corrida esteira',
-        reps: '> 30min'
+        title: 'Corrida (esteira)',
+        src: '/img/others/corrida-na-esteira-inclinada.webp',
+        reps: '> 30min',
+        hasCountdown: false
       }
     ]
-  },
-  {
-    weekDay: 6,
-    weekDayName: 'Sábado',
-    trainings: []
   }
+  // {
+  //   weekDay: 6,
+  //   weekDayName: 'Sábado',
+  //   trainings: []
+  // }
 ] as TrainingDay[];
