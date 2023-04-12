@@ -17,6 +17,10 @@ export const Header = styled('header', {
     placeContent: 'center',
     borderRadius: '50%',
 
+    '& svg': {
+      fontSize: '$h1'
+    },
+
     '&:hover': {
       backgroundColor: 'rgba(255, 255, 255, 0.3)'
     },

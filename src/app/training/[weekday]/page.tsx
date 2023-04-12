@@ -9,8 +9,8 @@ import map from 'lodash/map';
 import { Header } from '@/components/Header';
 import { Loader } from '@/components/Loader';
 import { Training } from '@/components/Training';
+import { CloseIcon } from '@/icons';
 import * as S from '@/styles/pages/training.styles';
-import { XCircle as XCircleIcon } from '@phosphor-icons/react';
 import { CSSProperties } from '@stitches/react';
 import { useQuery } from '@tanstack/react-query';
 
@@ -56,7 +56,7 @@ export default function TrainingPage({ params }: {
     if (!data?.trainings) {
       return (
         <S.Section>
-          <h4><XCircleIcon size={24} /> Nenhum treino encontrado</h4>
+          <h4><CloseIcon /> Nenhum treino encontrado</h4>
         </S.Section>
       );
     }

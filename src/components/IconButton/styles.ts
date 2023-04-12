@@ -25,9 +25,9 @@ export const Button = styled('button', {
 
   '& svg': {
     display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: '100%'
+    placeContent: 'center',
+    width: '100%',
+    fontSize: '$h1'
   },
 
   '&:hover': {

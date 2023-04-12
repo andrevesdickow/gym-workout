@@ -1,6 +1,6 @@
-import { IoArrowBack as ArrowBackIcon } from 'react-icons/io5';
-
 import Link from 'next/link';
+
+import { ArrowLeftShortIcon } from '@/icons';
 
 import * as S from './styles';
 
@@ -14,7 +14,7 @@ export const Header = ({ title, backHref }: HeaderProps) => {
     <S.Header>
       {backHref && (
         <Link href={backHref}>
-          <ArrowBackIcon />
+          <ArrowLeftShortIcon />
         </Link>
       )}
       <S.HeaderTitleContent>

@@ -6,7 +6,8 @@ export const Container = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  justifyContent: 'space-evenly',
+  // justifyContent: 'space-evenly',
+  gap: '$sSpaceMd',
   padding: '$sSpaceXs',
   color: '$black',
 

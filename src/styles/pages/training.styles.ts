@@ -7,6 +7,7 @@ export const Section = styled('section', {
   placeContent: 'center',
 
   '& svg': {
+    fontSize: '$h2',
     color: '$header',
     marginBottom: -4,
     marginRight: '$sSpaceXxs'
