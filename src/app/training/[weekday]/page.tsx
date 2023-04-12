@@ -3,9 +3,14 @@
 import SwipeableViews from 'react-swipeable-views';
 import { bindKeyboard } from 'react-swipeable-views-utils';
 
+import map from 'lodash/map';
+
+
 import { Header } from '@/components/Header';
 import { Loader } from '@/components/Loader';
 import { Training } from '@/components/Training';
+import * as S from '@/styles/pages/training.styles';
+import { XCircle as XCircleIcon } from '@phosphor-icons/react';
 import { CSSProperties } from '@stitches/react';
 import { useQuery } from '@tanstack/react-query';
 
@@ -40,7 +45,7 @@ export default function TrainingPage({ params }: {
   const { isLoading, data } = useQuery<TrainingDay>({
     queryKey: ['trainings'],
     queryFn: () =>
-      fetch(`/api/trainings/item?weekday=${weekday}`).then(
+      fetch(`/api/trainings/item?weekday=${weekday}`, { cache: 'no-store' }).then(
         (res) => res.json()
       )
   });
@@ -48,7 +53,15 @@ export default function TrainingPage({ params }: {
   const renderTraining = () => {
     // const dataLength = data?.trainings.length || 0;
 
-    const views = data?.trainings.map((item, index) => (
+    if (!data?.trainings) {
+      return (
+        <S.Section>
+          <h4><XCircleIcon size={24} /> Nenhum treino encontrado</h4>
+        </S.Section>
+      );
+    }
+
+    const views = map(data?.trainings, (item, index) => (
       <Training
         key={item.title}
         title={item.title}
@@ -75,7 +88,7 @@ export default function TrainingPage({ params }: {
 
       <main>
         {isLoading
-          ? (<Loader />)
+          ? (<S.Section><Loader /></S.Section>)
           : renderTraining()}
       </main>
     </>

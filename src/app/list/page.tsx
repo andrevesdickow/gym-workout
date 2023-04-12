@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 
+import map from 'lodash/map';
+
 import { Header } from '@/components/Header';
 import { Loader } from '@/components/Loader';
 import * as S from '@/styles/pages/list.styles';
@@ -35,7 +37,7 @@ type TrainingDay = {
 // }
 
 export default function ListPage() {
-  // const list = await getList();
+  // const data = await getList();
 
   const { isLoading, data } = useQuery<TrainingDay[]>({
     queryKey: ['training-weekdays'],
@@ -53,7 +55,7 @@ export default function ListPage() {
         <S.List>
           {isLoading
             ? (<Loader />)
-            : data?.map((item) => (
+            : map(data, (item) => (
               <li key={item.weekDay}>
                 <Link href={`/training/${item.weekDay}`}>{item.weekDayName}</Link>
               </li>

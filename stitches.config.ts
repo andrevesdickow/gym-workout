@@ -148,7 +148,8 @@ export const globalStyles = globalCss({
       )
       $colors$background-start-rgb`,
     height: '100vh',
-    minHeight: '-webkit-fill-available'
+    minHeight: '-webkit-fill-available',
+    overflow: 'hidden'
   },
   'html': {
     height: '-webkit-fill-available'
