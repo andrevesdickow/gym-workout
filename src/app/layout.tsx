@@ -17,7 +17,7 @@ const inter = Inter({ subsets: ['latin'] });
 export default function RootLayout({
   children
 }: {
-  children: React.ReactNode
+  children: JSX.Element
 }) {
   return (
     <html lang="pt-BR" className={inter.className}>
