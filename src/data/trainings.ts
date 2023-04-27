@@ -13,11 +13,6 @@ type TrainingDay = {
 }
 
 export default [
-  // {
-  //   weekDay: 0,
-  //   weekDayName: 'Domingo',
-  //   trainings: []
-  // },
   {
     weekDay: 1,
     weekDayName: 'Segunda-feira',
@@ -38,13 +33,23 @@ export default [
         reps: '4x10'
       },
       {
-        title: 'Cadeira adutora',
-        src: '/img/leg/cadeira-aducao.webp',
+        title: 'Cadeira flexora',
+        src: '/img/leg/cadeira-flexora.gif',
         reps: '4x10'
       },
       {
-        title: 'Panturrilha no Leg horizontal',
-        src: '/img/leg/panturrilha-no-leg-press.webp',
+        title: 'Mesa flexora',
+        src: '/img/leg/mesa-flexora.webp',
+        reps: '3x10'
+      },
+      {
+        title: 'Stiff',
+        src: '/img/leg/stiff-com-barra.gif',
+        reps: '3x10'
+      },
+      {
+        title: 'Panturrilheira',
+        src: '/img/leg/panturrilha-sentado.gif',
         reps: '4x12'
       }
     ]
@@ -61,16 +66,16 @@ export default [
       {
         title: 'Serrote',
         src: '/img/back/serrote-no-banco.webp',
-        reps: '3x8'
+        reps: '3x10'
       },
       {
-        title: 'Remada cavalinho (pronada)',
-        src: '/img/back/remada-no-banco-inclinado-com-halteres.webp',
+        title: 'Voador inverso',
+        src: '/img/back/voador-invertido-no-peck-deck.webp',
         reps: '3x12'
       },
       {
-        title: 'Rosca direta na polia',
-        src: '/img/arm/rosca-direta-no-cabo.webp',
+        title: 'Rosca Scott (barra W)',
+        src: '/img/arm/rosca-scott-com-barra-w.webp',
         reps: '4x10'
       },
       {
@@ -81,7 +86,7 @@ export default [
       {
         title: 'Flexão de punho',
         src: '/img/arm/flexao-de-punho-com-halteres.jpg',
-        reps: '3x8'
+        reps: '3x10'
       },
       {
         title: 'Abdominal declinado',
@@ -95,55 +100,24 @@ export default [
     weekDayName: 'Quarta-feira',
     trainings: [
       {
-        title: 'Agachamento búlgaro',
-        src: '/img/leg/agachamento-bulgaro.gif',
-        reps: '3x8'
+        title: 'Supino reto',
+        src: '/img/chest/supino-reto.webp',
+        reps: '4x(15 - 12 - 10 - 8)'
       },
-      {
-        title: 'Elevação pélvica (máquina)',
-        src: '/img/leg/elevacao-pelvica.gif',
-        reps: '3x12'
-      },
-      {
-        title: 'Cadeira abdutora',
-        src: '/img/leg/cadeira-abducao.webp',
-        reps: '4x10'
-      },
-      {
-        title: 'Cadeira flexora',
-        src: '/img/leg/cadeira-flexora.gif',
-        reps: '4x10'
-      },
-      {
-        title: 'Mesa flexora',
-        src: '/img/leg/mesa-flexora.webp',
-        reps: '3x10'
-      },
-      {
-        title: 'Panturrilheira',
-        src: '/img/leg/panturrilha-sentado.gif',
-        reps: '4x12'
-      }
-    ]
-  },
-  {
-    weekDay: 4,
-    weekDayName: 'Quinta-feira',
-    trainings: [
       {
         title: 'Supino inclinado',
         src: '/img/chest/supino-inclinado-com-barra.webp',
         reps: '3x10'
       },
       {
-        title: 'Crucifixo',
-        src: '/img/chest/crucifixo.gif',
-        reps: '3x12'
-      },
-      {
         title: 'Crossover',
         src: '/img/chest/crossover.gif',
         reps: '3x10'
+      },
+      {
+        title: 'Voador',
+        src: '/img/chest/voador-no-peck-deck.webp',
+        reps: '3x12'
       },
       {
         title: 'Elevação frontal na polia (corda)',
@@ -156,13 +130,13 @@ export default [
         reps: '3x10'
       },
       {
-        title: 'Tríceps francês',
-        src: '/img/arm/triceps-frances.webp',
+        title: 'Tríceps francês na polia',
+        src: '/img/arm/triceps-frances-pulley.webp',
         reps: '4x10'
       },
       {
-        title: 'Pulley',
-        src: '/img/arm/triceps-puxada-no-pulley.webp',
+        title: 'Pulley com corda',
+        src: '/img/arm/triceps-puxada-no-pulley-com-corda.webp',
         reps: '4x10'
       },
       {
@@ -173,8 +147,8 @@ export default [
     ]
   },
   {
-    weekDay: 5,
-    weekDayName: 'Sexta-feira',
+    weekDay: 4,
+    weekDayName: 'Quinta-feira',
     trainings: [
       {
         title: 'Corrida (esteira)',
@@ -183,10 +157,46 @@ export default [
         hasCountdown: false
       }
     ]
+  },
+  {
+    weekDay: 5,
+    weekDayName: 'Sexta-feira',
+    trainings: [
+      {
+        title: 'Tríceps corda unilateral',
+        src: '/img/arm/triceps-puxada-no-pulley-com-corda.webp',
+        reps: '4x10'
+      },
+      {
+        title: 'Rosca 21',
+        src: '/img/arm/rosca-21.webp',
+        reps: '3x21'
+      },
+      {
+        title: 'Tríceps testa (barra W)',
+        src: '/img/arm/triceps-testa-no-banco-inclinado.webp',
+        reps: '3x12'
+      },
+      {
+        title: 'Rosca martelo',
+        src: '/img/arm/rosca-martelo-com-halteres.webp',
+        reps: '3x12'
+      },
+      {
+        title: 'Rosca inversa (sentado)',
+        src: '/img/arm/rosca-inversa-barra-w.gif',
+        reps: '4x10'
+      },
+      {
+        title: 'Flexão de punho inverso',
+        src: '/img/arm/flexao-de-punho-com-halteres.jpg',
+        reps: '3x10'
+      },
+      {
+        title: 'Abdominal capitão',
+        src: '/img/others/abdominal-capitao.gif',
+        reps: '3x15'
+      }
+    ]
   }
-  // {
-  //   weekDay: 6,
-  //   weekDayName: 'Sábado',
-  //   trainings: []
-  // }
 ] as TrainingDay[];

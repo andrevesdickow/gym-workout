@@ -23,6 +23,7 @@ export default function HomePage() {
       <Header title="Gym Workout" />
 
       <S.Main>
+        <p>Início: 02/05/2023</p>
         <Link href={`/training/${weekDay}`}><BarbellIcon /> Ir para treino do dia</Link>
         <Link href="/list"><ClipboardListIcon /> Escolher outro treino</Link>
       </S.Main>

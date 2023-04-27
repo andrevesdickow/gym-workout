@@ -7,6 +7,10 @@ export const Main = styled('main', {
   placeContent: 'center',
   gap: '$sSpaceMd',
 
+  '& p': {
+    textAlign: 'center'
+  },
+
   '& a': {
     display: 'flex',
     alignItems: 'center',
