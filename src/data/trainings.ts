@@ -59,13 +59,18 @@ export default [
     weekDayName: 'Terça-feira',
     trainings: [
       {
-        title: 'Puxada alta triângulo',
-        src: '/img/back/puxada-alta-com-triangulo.webp',
+        title: 'Puxada a frente',
+        src: '/img/back/puxada-a-frente.gif',
         reps: '3x12'
       },
       {
-        title: 'Serrote',
-        src: '/img/back/serrote-no-banco.webp',
+        title: 'Puxada alta',
+        src: '/img/back/puxada-alta-com-barra.webp',
+        reps: '3x10'
+      },
+      {
+        title: 'Remada baixa',
+        src: '/img/back/remada-baixa.webp',
         reps: '3x10'
       },
       {
@@ -84,11 +89,6 @@ export default [
         reps: '3x10'
       },
       {
-        title: 'Flexão de punho',
-        src: '/img/arm/flexao-de-punho-com-halteres.jpg',
-        reps: '3x10'
-      },
-      {
         title: 'Abdominal declinado',
         src: '/img/others/abdominal-obliquo-no-banco-inclinado.webp',
         reps: '3x15'
@@ -100,24 +100,19 @@ export default [
     weekDayName: 'Quarta-feira',
     trainings: [
       {
-        title: 'Supino reto',
-        src: '/img/chest/supino-reto.webp',
-        reps: '4x(15 - 12 - 10 - 8)'
-      },
-      {
-        title: 'Supino inclinado',
-        src: '/img/chest/supino-inclinado-com-barra.webp',
-        reps: '3x10'
-      },
-      {
         title: 'Crossover',
         src: '/img/chest/crossover.gif',
         reps: '3x10'
       },
       {
-        title: 'Voador',
-        src: '/img/chest/voador-no-peck-deck.webp',
-        reps: '3x12'
+        title: 'Dumbbell Press',
+        src: '/img/chest/dumbbell-press.gif',
+        reps: '4x10'
+      },
+      {
+        title: 'Desenvolvimento com halteres',
+        src: '/img/chest/desenvolvimento-com-halteres.webp',
+        reps: '3x10'
       },
       {
         title: 'Elevação frontal na polia (corda)',
@@ -153,7 +148,7 @@ export default [
       {
         title: 'Corrida (esteira)',
         src: '/img/others/corrida-na-esteira-inclinada.webp',
-        reps: '> 30min',
+        reps: '-+ 30min',
         hasCountdown: false
       }
     ]
@@ -188,7 +183,7 @@ export default [
         reps: '4x10'
       },
       {
-        title: 'Flexão de punho inverso',
+        title: 'Flexão de punho',
         src: '/img/arm/flexao-de-punho-com-halteres.jpg',
         reps: '3x10'
       },
