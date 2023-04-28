@@ -125,8 +125,8 @@ export default [
         reps: '3x10'
       },
       {
-        title: 'Tríceps francês na polia',
-        src: '/img/arm/triceps-frances-pulley.webp',
+        title: 'Tríceps francês',
+        src: '/img/arm/triceps-frances.webp',
         reps: '4x10'
       },
       {
