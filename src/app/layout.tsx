@@ -1,9 +1,8 @@
 import { Inter } from 'next/font/google';
 
-import { StyleSheet } from '@/components/StyleSheet';
-import { globalStyles } from '@stitchesConfig';
-
 import Providers from './providers';
+
+import './globals.css';
 
 export const metadata = {
   title: 'Gym Workout',
@@ -23,15 +22,15 @@ export default function RootLayout({
   children: JSX.Element
 }) {
   return (
-    <html lang="pt-BR" className={inter.className}>
-      <head>
+    <html lang="pt-BR" className={`${inter.className} bg-white dark:bg-black/95`}>
+      {/* <head>
         <StyleSheet />
-      </head>
+      </head> */}
       <body>
         <Providers>
           {children}
         </Providers>
-        {globalStyles()}
+        {/* {globalStyles()} */}
       </body>
     </html>
   );

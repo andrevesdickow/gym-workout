@@ -1,17 +1,15 @@
 'use client';
 
+import React from 'react';
 import SwipeableViews from 'react-swipeable-views';
 import { bindKeyboard } from 'react-swipeable-views-utils';
 
 import map from 'lodash/map';
 
-
 import { Header } from '@/components/Header';
 import { Loader } from '@/components/Loader';
 import { Training } from '@/components/Training';
 import { CloseIcon } from '@/icons';
-import * as S from '@/styles/pages/training.styles';
-import { CSSProperties } from '@stitches/react';
 import { useQuery } from '@tanstack/react-query';
 
 type Training = {
@@ -35,7 +33,7 @@ const swStyles = {
     width: '100%',
     height: 'calc(100vh - 64px)'
   }
-} as { [key: string]: CSSProperties };
+} as { [key: string]: React.CSSProperties };
 
 export default function TrainingPage({ params }: {
   params: { weekday: number };
@@ -55,9 +53,9 @@ export default function TrainingPage({ params }: {
 
     if (!data?.trainings) {
       return (
-        <S.Section>
-          <h4><CloseIcon /> Nenhum treino encontrado</h4>
-        </S.Section>
+        <section className="w-full h-[calc(100vh-64px)] grid place-content-center">
+          <h4 className="flex font-bold dark:text-white"><CloseIcon className="text-2xl text-yellow-500 mr-2" /> Nenhum treino encontrado</h4>
+        </section>
       );
     }
 
@@ -88,7 +86,7 @@ export default function TrainingPage({ params }: {
 
       <main>
         {isLoading
-          ? (<S.Section><Loader /></S.Section>)
+          ? (<section className="w-full h-[calc(100vh-64px)] grid place-content-center"><Loader /></section>)
           : renderTraining()}
       </main>
     </>

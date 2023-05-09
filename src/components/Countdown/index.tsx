@@ -5,8 +5,6 @@ import { useState } from 'react';
 import { IconButton } from '@/components/IconButton';
 import { PlayIcon, ResetIcon } from '@/icons';
 
-import * as S from './styles';
-
 export const Countdown = () => {
   const [counter, setCounter] = useState(50);
   const [playing, setPlaying] = useState(false);
@@ -32,14 +30,14 @@ export const Countdown = () => {
   };
 
   return (
-    <S.Container>
-      <S.Timer>
-        <span>{counter}</span>
-        <div>
+    <div className="w-full flex items-center justify-center">
+      <div className="flex flex-col items-center justify-center">
+        <span className="text-7xl dark:text-white">{counter}</span>
+        <div className="flex gap-2">
           <IconButton icon={<PlayIcon />} onClick={handlePlay} disabled={playing} />
           <IconButton icon={<ResetIcon />} onClick={handleReset} disabled={counter !== 0} />
         </div>
-      </S.Timer>
-    </S.Container>
+      </div>
+    </div>
   );
 };

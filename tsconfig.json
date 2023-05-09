@@ -27,9 +27,6 @@
     "paths": {
       "@/*": [
         "src/*"
-      ],
-      "@stitchesConfig": [
-        "stitches.config.ts"
       ]
     }
   },

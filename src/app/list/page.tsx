@@ -6,7 +6,6 @@ import map from 'lodash/map';
 
 import { Header } from '@/components/Header';
 import { Loader } from '@/components/Loader';
-import * as S from '@/styles/pages/list.styles';
 import { useQuery } from '@tanstack/react-query';
 
 type Training = {
@@ -55,13 +54,13 @@ export default function ListPage() {
     <>
       <Header title="Gym Workout" />
 
-      <S.Main>
-        <S.List>
+      <main className="w-full h-[calc(100vh-64px)] grid place-content-center">
+        <ul className="flex gap-4 flex-col text-center dark:text-white">
           {isLoading
             ? (<Loader />)
             : map(data, (item) => (
               <li key={item.weekDay}>
-                <Link href={`/training/${item.weekDay}`}>{item.weekDayName}</Link>
+                <Link href={`/training/${item.weekDay}`} className="font-bold text-lg hover:text-yellow-500">{item.weekDayName}</Link>
               </li>
             ))
           }
@@ -70,8 +69,8 @@ export default function ListPage() {
               <Link href={`/training/${item.weekDay}`}>{item.weekDayName}</Link>
             </li>
           ))} */}
-        </S.List>
-      </S.Main>
+        </ul>
+      </main>
     </>
   );
 }
