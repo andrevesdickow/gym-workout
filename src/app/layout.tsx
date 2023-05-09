@@ -23,14 +23,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={`${inter.className} bg-white dark:bg-black/95`}>
-      {/* <head>
-        <StyleSheet />
-      </head> */}
       <body>
         <Providers>
           {children}
         </Providers>
-        {/* {globalStyles()} */}
       </body>
     </html>
   );

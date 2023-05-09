@@ -48,7 +48,7 @@ export default [
         reps: '3x10'
       },
       {
-        title: 'Panturrilheira',
+        title: 'Panturrilha sentado',
         src: '/img/leg/panturrilha-sentado.gif',
         reps: '4x12'
       }
@@ -79,12 +79,12 @@ export default [
         reps: '3x12'
       },
       {
-        title: 'Rosca Scott (barra W)',
-        src: '/img/arm/rosca-scott-com-barra-w.webp',
+        title: 'Rosca simultânea',
+        src: '/img/arm/rosca-direta-com-halteres.webp',
         reps: '4x10'
       },
       {
-        title: 'Rosca martelo sentado',
+        title: 'Rosca martelo (sentado)',
         src: '/img/arm/rosca-martelo-com-halteres-no-banco-inclinado.webp',
         reps: '3x10'
       },
@@ -150,6 +150,11 @@ export default [
         src: '/img/others/corrida-na-esteira-inclinada.webp',
         reps: '-+ 30min',
         hasCountdown: false
+      },
+      {
+        title: 'Panturrilha no Leg H.',
+        src: '/img/leg/panturrilha-no-leg-press.webp',
+        reps: '4x12'
       }
     ]
   },
@@ -168,8 +173,8 @@ export default [
         reps: '3x21'
       },
       {
-        title: 'Tríceps testa (barra W)',
-        src: '/img/arm/triceps-testa-no-banco-inclinado.webp',
+        title: 'Tríceps testa',
+        src: '/img/arm/triceps-testa-com-halteres.webp',
         reps: '3x12'
       },
       {

@@ -49,8 +49,6 @@ export default function TrainingPage({ params }: {
   });
 
   const renderTraining = () => {
-    // const dataLength = data?.trainings.length || 0;
-
     if (!data?.trainings) {
       return (
         <section className="w-full h-[calc(100vh-64px)] grid place-content-center">
