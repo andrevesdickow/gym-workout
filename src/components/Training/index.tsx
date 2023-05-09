@@ -18,7 +18,7 @@ export const Training = ({
   hasCountdown = true
 }: TrainingProps) => {
   return (
-    <div className="w-full h-[calc(100vh-64px)] flex flex-col items-center`` gap-6 p-2">
+    <div className="w-full h-[calc(100vh-64px)] flex flex-col items-center gap-6 p-2">
       <h3 className="p-6 text-lg font-bold dark:text-white">{title} {reps && <small className="text-xs">({reps})</small>}</h3>
       <Image
         src={imgSrc}
