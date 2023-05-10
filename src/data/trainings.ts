@@ -51,6 +51,11 @@ export default [
         title: 'Panturrilha sentado',
         src: '/img/leg/panturrilha-sentado.gif',
         reps: '4x12'
+      },
+      {
+        title: 'Panturrilha de pé',
+        src: '/img/leg/panturrilha-de-pe-com-step.gif',
+        reps: '4x12'
       }
     ]
   },
@@ -110,6 +115,11 @@ export default [
         reps: '4x10'
       },
       {
+        title: 'Voador',
+        src: '/img/chest/voador-no-peck-deck.webp',
+        reps: '3x12'
+      },
+      {
         title: 'Desenvolvimento com halteres',
         src: '/img/chest/desenvolvimento-com-halteres.webp',
         reps: '3x10'
@@ -123,11 +133,6 @@ export default [
         title: 'Elevação lateral na polia',
         src: '/img/arm/elevacao-lateral-na-polia.gif',
         reps: '3x10'
-      },
-      {
-        title: 'Tríceps francês',
-        src: '/img/arm/triceps-frances.webp',
-        reps: '4x10'
       },
       {
         title: 'Pulley com corda',
@@ -173,14 +178,14 @@ export default [
         reps: '3x21'
       },
       {
-        title: 'Tríceps testa',
-        src: '/img/arm/triceps-testa-com-halteres.webp',
-        reps: '3x12'
+        title: 'Tríceps francês',
+        src: '/img/arm/triceps-frances.webp',
+        reps: '4x10'
       },
       {
         title: 'Rosca martelo',
         src: '/img/arm/rosca-martelo-com-halteres.webp',
-        reps: '3x12'
+        reps: '4x10'
       },
       {
         title: 'Rosca inversa (sentado)',

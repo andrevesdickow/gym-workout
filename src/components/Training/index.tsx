@@ -26,7 +26,7 @@ export const Training = ({
         width={320}
         height={320}
         priority={imgPriority}
-        className="max-h-80 dark:invert"
+        className="md:w-auto md:max-h-none md:h-fit w-full h-auto max-h-80 dark:invert"
       />
       {hasCountdown === true && <Countdown />}
     </div>
