@@ -18,47 +18,6 @@ export default [
     weekDayName: 'Segunda-feira',
     trainings: [
       {
-        title: 'Agachamento barra livre',
-        src: '/img/leg/agachamento-com-barra.webp',
-        reps: '3x12'
-      },
-      {
-        title: 'Agachamento hack',
-        src: '/img/leg/agachamento-hack-squat.gif',
-        reps: '3x12'
-      },
-      {
-        title: 'Leg press 45°',
-        src: '/img/leg/leg-press-45.webp',
-        reps: '3x12'
-      },
-      {
-        title: 'Afundo',
-        src: '/img/leg/agachamento-afundo-com-halteres.webp',
-        reps: '3x12'
-      },
-      {
-        title: 'Cadeira extensora',
-        src: '/img/leg/cadeira-extensora.webp',
-        reps: '4x10'
-      },
-      {
-        title: 'Panturrilha no Leg H.',
-        src: '/img/leg/panturrilha-no-leg-press.webp',
-        reps: '4x12'
-      },
-      {
-        title: 'Panturrilha de pé',
-        src: '/img/leg/panturrilha-de-pe-com-step.gif',
-        reps: '4x12'
-      }
-    ]
-  },
-  {
-    weekDay: 2,
-    weekDayName: 'Terça-feira',
-    trainings: [
-      {
         title: 'Puxada a frente',
         src: '/img/back/puxada-a-frente.gif',
         reps: '3x12'
@@ -103,6 +62,47 @@ export default [
         src: '/img/others/corrida-na-esteira-inclinada.webp',
         reps: '> 10min',
         hasCountdown: false
+      }
+    ]
+  },
+  {
+    weekDay: 2,
+    weekDayName: 'Terça-feira',
+    trainings: [
+      {
+        title: 'Agachamento barra livre',
+        src: '/img/leg/agachamento-com-barra.webp',
+        reps: '3x12'
+      },
+      {
+        title: 'Agachamento hack',
+        src: '/img/leg/agachamento-hack-squat.gif',
+        reps: '3x12'
+      },
+      {
+        title: 'Leg press 45°',
+        src: '/img/leg/leg-press-45.webp',
+        reps: '3x12'
+      },
+      {
+        title: 'Afundo',
+        src: '/img/leg/agachamento-afundo-com-halteres.webp',
+        reps: '3x12'
+      },
+      {
+        title: 'Cadeira extensora',
+        src: '/img/leg/cadeira-extensora.webp',
+        reps: '4x10'
+      },
+      {
+        title: 'Panturrilha no Leg H.',
+        src: '/img/leg/panturrilha-no-leg-press.webp',
+        reps: '4x12'
+      },
+      {
+        title: 'Panturrilha de pé',
+        src: '/img/leg/panturrilha-de-pe-com-step.gif',
+        reps: '4x12'
       }
     ]
   },

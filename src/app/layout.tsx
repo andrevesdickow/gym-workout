@@ -8,7 +8,7 @@ export const metadata = {
   title: 'Gym Workout',
   description: 'Treino do meu cotidiano',
   authors: { name: 'Andrêves Dickow', url: 'https://github.com/andrevesdickow' },
-  keywords: ['gym', 'training', 'workout'],
+  keywords: ['gym', 'training', 'workout', 'celera'],
   themeColor: '#eab308'
 };
 
@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={`${inter.className} bg-white dark:bg-black/95`}>
-      <body>
+      <body className="overflow-hidden">
         <Providers>
           {children}
         </Providers>
