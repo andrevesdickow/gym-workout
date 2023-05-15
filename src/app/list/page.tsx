@@ -54,7 +54,7 @@ export default function ListPage() {
     <>
       <Header title="Gym Workout" />
 
-      <main className="w-full h-[calc(100vh-64px)] grid place-content-center">
+      <main className="w-full h-[calc(100vh-64px)] grid place-content-center overflow-hidden">
         <ul className="flex gap-4 flex-col text-center dark:text-white">
           {isLoading
             ? (<Loader />)

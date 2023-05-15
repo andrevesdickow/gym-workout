@@ -23,8 +23,18 @@ export default [
         reps: '3x12'
       },
       {
+        title: 'Agachamento hack',
+        src: '/img/leg/agachamento-hack-squat.gif',
+        reps: '3x12'
+      },
+      {
         title: 'Leg press 45°',
         src: '/img/leg/leg-press-45.webp',
+        reps: '3x12'
+      },
+      {
+        title: 'Afundo',
+        src: '/img/leg/agachamento-afundo-com-halteres.webp',
         reps: '3x12'
       },
       {
@@ -33,23 +43,8 @@ export default [
         reps: '4x10'
       },
       {
-        title: 'Cadeira flexora',
-        src: '/img/leg/cadeira-flexora.gif',
-        reps: '4x10'
-      },
-      {
-        title: 'Mesa flexora',
-        src: '/img/leg/mesa-flexora.webp',
-        reps: '3x10'
-      },
-      {
-        title: 'Stiff',
-        src: '/img/leg/stiff-com-barra.gif',
-        reps: '3x10'
-      },
-      {
-        title: 'Panturrilha sentado',
-        src: '/img/leg/panturrilha-sentado.gif',
+        title: 'Panturrilha no Leg H.',
+        src: '/img/leg/panturrilha-no-leg-press.webp',
         reps: '4x12'
       },
       {
@@ -94,9 +89,20 @@ export default [
         reps: '3x10'
       },
       {
+        title: 'Rosca inversa (sentado)',
+        src: '/img/arm/rosca-inversa-barra-w.gif',
+        reps: '3x12'
+      },
+      {
         title: 'Abdominal declinado',
         src: '/img/others/abdominal-obliquo-no-banco-inclinado.webp',
         reps: '3x15'
+      },
+      {
+        title: 'Corrida (esteira)',
+        src: '/img/others/corrida-na-esteira-inclinada.webp',
+        reps: '> 10min',
+        hasCountdown: false
       }
     ]
   },
@@ -143,6 +149,12 @@ export default [
         title: 'Prancha',
         src: '/img/others/prancha.gif',
         reps: '3x45s'
+      },
+      {
+        title: 'Corrida (esteira)',
+        src: '/img/others/corrida-na-esteira-inclinada.webp',
+        reps: '> 10min',
+        hasCountdown: false
       }
     ]
   },
@@ -151,14 +163,43 @@ export default [
     weekDayName: 'Quinta-feira',
     trainings: [
       {
-        title: 'Corrida (esteira)',
-        src: '/img/others/corrida-na-esteira-inclinada.webp',
-        reps: '-+ 30min',
-        hasCountdown: false
+        title: 'Agachamento búlgaro',
+        src: '/img/leg/agachamento-bulgaro.gif',
+        reps: '4x10'
       },
       {
-        title: 'Panturrilha no Leg H.',
-        src: '/img/leg/panturrilha-no-leg-press.webp',
+        title: 'Elevação pélvica',
+        src: '/img/leg/elevacao-pelvica.gif',
+        reps: '3x10'
+      },
+      {
+        title: 'Cadeira abdutora',
+        src: '/img/leg/cadeira-abducao.webp',
+        reps: '3x10'
+      },
+      {
+        title: 'Cadeira flexora',
+        src: '/img/leg/cadeira-flexora.gif',
+        reps: '4x10'
+      },
+      {
+        title: 'Mesa flexora',
+        src: '/img/leg/mesa-flexora.webp',
+        reps: '3x12'
+      },
+      {
+        title: 'Stiff',
+        src: '/img/leg/stiff-com-barra.gif',
+        reps: '3x12'
+      },
+      {
+        title: 'Panturrilha sentado',
+        src: '/img/leg/panturrilha-sentado.gif',
+        reps: '4x12'
+      },
+      {
+        title: 'Panturrilha de pé',
+        src: '/img/leg/panturrilha-de-pe-com-step.gif',
         reps: '4x12'
       }
     ]
@@ -168,39 +209,39 @@ export default [
     weekDayName: 'Sexta-feira',
     trainings: [
       {
-        title: 'Tríceps corda unilateral',
-        src: '/img/arm/triceps-puxada-no-pulley-com-corda.webp',
-        reps: '4x10'
+        title: 'Tríceps pulley',
+        src: '/img/arm/triceps-puxada-no-pulley.webp',
+        reps: '4x∞'
       },
       {
-        title: 'Rosca 21',
-        src: '/img/arm/rosca-21.webp',
-        reps: '3x21'
+        title: 'Rosca simultânea',
+        src: '/img/arm/rosca-direta-com-halteres.webp',
+        reps: '4x∞'
+      },
+      {
+        title: 'Tríceps testa (com halteres)',
+        src: '/img/arm/triceps-testa-com-halteres.webp',
+        reps: '4x∞'
+      },
+      {
+        title: 'Rosca Scott',
+        src: '/img/arm/rosca-scott-com-barra-w.webp',
+        reps: '4x∞'
       },
       {
         title: 'Tríceps francês',
         src: '/img/arm/triceps-frances.webp',
-        reps: '4x10'
+        reps: '4x∞'
       },
       {
-        title: 'Rosca martelo',
-        src: '/img/arm/rosca-martelo-com-halteres.webp',
-        reps: '4x10'
-      },
-      {
-        title: 'Rosca inversa (sentado)',
-        src: '/img/arm/rosca-inversa-barra-w.gif',
-        reps: '4x10'
+        title: 'Rosca 45°',
+        src: '/img/arm/rosca-45.webp',
+        reps: '4x∞'
       },
       {
         title: 'Flexão de punho',
         src: '/img/arm/flexao-de-punho-com-halteres.jpg',
         reps: '3x10'
-      },
-      {
-        title: 'Abdominal capitão',
-        src: '/img/others/abdominal-capitao.gif',
-        reps: '3x15'
       }
     ]
   }

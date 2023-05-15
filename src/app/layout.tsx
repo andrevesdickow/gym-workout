@@ -8,7 +8,8 @@ export const metadata = {
   title: 'Gym Workout',
   description: 'Treino do meu cotidiano',
   authors: { name: 'Andrêves Dickow', url: 'https://github.com/andrevesdickow' },
-  keywords: ['gym', 'training', 'workout']
+  keywords: ['gym', 'training', 'workout'],
+  themeColor: '#eab308'
 };
 
 const inter = Inter({
